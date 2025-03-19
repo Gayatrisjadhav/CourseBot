@@ -5,8 +5,11 @@ inference code
 import requests
 
 url = "http://localhost:5000/ask"
+
 payload = {"question": "What technical courses are available?"}
+
 headers = {"Content-Type": "application/json"}
 
 response = requests.post(url, json=payload, headers=headers)
+
 print(response.json())
